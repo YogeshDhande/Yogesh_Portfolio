@@ -3,7 +3,7 @@ import { contactInfo } from "../data";
 import SocialHandles from "./SocialHandles";
 import { BsFillSendFill } from "react-icons/bs";
 import emailjs from "emailjs-com";
-import "../styles/Contact.css";
+import "../styles/contact.css";
 import { SEND_NOW } from "../uiContants";
 
 const Contact = () => {
