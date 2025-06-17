@@ -1,0 +1,22 @@
+#articles .testimonial{
+    text-align: center;
+    padding: 0px;
+    clip-path: var(--polygon);
+}
+#articles .avatar{
+    height: 300px;
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px rgba(1, 1, 1, 0.329);
+}
+#articles .name{
+    padding: 10px 0px 5px;
+    font-size: 1.2rem;
+}
+#articles .review{
+    text-align: justify;
+    padding: 0px 20px 40px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}

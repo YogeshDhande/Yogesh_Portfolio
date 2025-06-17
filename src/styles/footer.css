@@ -1,0 +1,101 @@
+footer .section__wrapper{
+    position: relative;
+    z-index: 2;
+    padding: 10px 0px 0px;
+}
+footer .footer__wrapper{
+    justify-content: space-between;
+    width: 100%;
+    border-top: 0.1px solid rgba(255, 255, 255, 0.3);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+}
+footer .nav{
+    gap: 20px;
+}
+footer .nav__item{
+    transition: var(--transition);
+}
+footer .nav__item:hover{
+    color: var(--color-primary);
+}
+footer .social__handles__container{
+    justify-content: center;
+}
+footer .copyright{
+    text-align: center;
+}
+footer .copyright h3{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+footer .version{
+    text-align: center;
+}
+footer .version p{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.3);
+}
+footer .base__logo .full__name{
+    font-size: 140px;
+    font-weight: 900;
+    background: conic-gradient(#2f2585, #d8cce6, #f020fd, #2bdeac);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: left;
+    opacity: 0.4;
+}
+#movingText{
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+#movingText::-webkit-scrollbar{
+    display: none ;
+}
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation: moving 20s linear infinite;
+}
+#movingText .full__name{
+    display: inline-block;
+}
+.divider{
+    padding: 0px 20px;
+}
+@keyframes moving{
+    form{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 1200px) {
+    footer .base__logo .full__name{
+        font-size: 100px;
+    }
+}
+@media (max-width: 900px) {
+    footer .base__logo .full__name{
+        font-size: 70px;
+    }
+}
+@media (max-width: 768px) {
+    footer .nav{
+        flex-direction: column;
+    }
+    footer .base__logo .full__name{
+        font-size: 50px;
+    }
+}
+@media (max-width: 450px) {
+    footer .base__logo .full__name{
+        font-size: 38px;
+    }
+}

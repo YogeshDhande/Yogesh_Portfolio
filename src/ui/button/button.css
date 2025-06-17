@@ -1,0 +1,22 @@
+.hire__btn{
+    overflow: hidden;
+    position: relative;
+    padding-right: 3.3rem;
+    border-radius: 25px;
+    box-shadow: 0 0 1.6rem -0.6rem var(--color-ui-2);
+}
+.hire__btn .icon{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    position: absolute;
+    right: 0.3rem;
+    margin-left: 1rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 25px;
+    box-shadow: 0.1rem 0.1rem 0.6rem 0.2rem var(--color-ui-2);
+    transition: var(--transition);
+}
+.hire__btn:hover .icon{
+    width: calc(100% - 0.6rem);
+}
