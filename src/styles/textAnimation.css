@@ -1,0 +1,84 @@
+.text-rotate {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: pre-wrap;
+  position: relative;
+}
+
+.text-rotate-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-rotate-word {
+  display: inline-flex;
+}
+
+.text-rotate-lines {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text-rotate-element {
+  display: inline-block;
+}
+
+.text-rotate-space {
+  white-space: pre;
+}
+
+/* For main container */
+.main {
+  background-color: #67e8f9; /* Tailwind bg-cyan-300 */
+  color: black;              /* Tailwind text-black */
+  overflow: hidden;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem; /* Tailwind rounded-lg */
+}
+
+@media (min-width: 640px) {
+  .main {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* For split level text wrapper */
+.split-level {
+  overflow: hidden;
+  padding-bottom: 0.125rem;
+}
+
+@media (min-width: 640px) {
+  .split-level {
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .split-level {
+    padding-bottom: 0.25rem;
+  }
+}

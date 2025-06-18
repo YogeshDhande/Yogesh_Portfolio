@@ -2,7 +2,7 @@ import '../styles/about.css'
 import Hole from '../ui/Hole'
 import { skills } from '../data'
 import CardUi from '../assets/CardUi'
-import { ABOUT_ME, ABOUT_ME_TEXT, MY_NAME } from '../uiContants'
+import { ABOUT_ME, ABOUT_ME_TEXT, ABOUT_ME_TEXT_2, MY_NAME } from '../uiContants'
 const About = () => {
   return (
     <section id='about'>
@@ -28,7 +28,7 @@ const About = () => {
         <div className='column right-column'>
           <h2 className='shine'>{ABOUT_ME}</h2>
           <h1 className='title'>I am <span className='color__primary'>{MY_NAME}</span></h1>
-          <p className='text__muted description'>{ABOUT_ME_TEXT}</p>
+          <p className='text__muted description'>{ABOUT_ME_TEXT}<br/>{ABOUT_ME_TEXT_2}</p>
 
         </div>
       </div>

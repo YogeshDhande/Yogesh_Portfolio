@@ -27,4 +27,6 @@ export { default as reactnative } from "./icons/reactnative.svg";
 export { default as emailicon } from "./icons/email.png";
 export { default as messengericon } from "./icons/messenger.png";
 export { default as whatsappicon } from "./icons/whatsapp.png";
-export { default as nodejs } from "./icons/nodejs.svg"
+export { default as nodejs } from "./icons/nodejs.svg";
+export { default as expressjs } from "./icons/expressjs.svg";
+export { default as sass } from "./icons/sass.svg";

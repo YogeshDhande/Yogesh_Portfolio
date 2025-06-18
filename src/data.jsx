@@ -15,16 +15,16 @@ import {
   profile5,
   profile6,
   figma,
-  sketch,
   css,
   html,
   javascript,
   tailwind,
   bootstrap,
   react,
-  reactnative,
   emailicon,
-  nodejs
+  nodejs,
+  expressjs,
+  sass
 } from "./assets";
 
 export const menu = [
@@ -209,9 +209,9 @@ export const skills = [
         logo: figma,
       },
       {
-        skill: "Sketch",
+        skill: "ExpressJs",
         level: "Intermediate",
-        logo: sketch,
+        logo: expressjs,
       },
       {
         skill: "NodeJs",
@@ -254,9 +254,9 @@ export const skills = [
         logo: react,
       },
       {
-        skill: "React Native",
-        level: "Experienced",
-        logo: reactnative,
+        skill: "Sass",
+        level: "Intermediate",
+        logo: sass,
       },
     ],
   },

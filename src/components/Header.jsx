@@ -4,9 +4,9 @@ import "../styles/header.css";
 import { profile } from "../assets";
 import Button from "../ui/button";
 import { HEADER_TEXT, MY_NAME, SOFTWARE_ENGINEER } from "../uiContants";
+import TextAnimation from "./TextAnimation";
 
-const code =
-`const developer ={
+const code = `const developer ={
   firstName:"Yogesh",
   lastName:"Dhande",
   aka:"Mr.Dominic",
@@ -23,9 +23,24 @@ const Header = () => {
       <div className="section__wrapper">
         <div className="grid upper">
           <div className="column flex__center header__title">
-            <span className="text__role shine">{SOFTWARE_ENGINEER}</span>
-            <h1 className="h1">Hello I'm <br/><span>{MY_NAME}</span></h1>
-            <Button btnText={'Download Resume'} isNavBtn={false}/>
+              <TextAnimation
+              className="text__role shine"
+                texts={["Software Engineer", "MERN Stack", "Frontend Developer", "UI/UX Developer", "Web Developer"]}
+                mainClassName="main"
+                staggerFrom={"last"}
+                initial={{ y: "100%" }}
+                animate={{ y: 0 }}
+                exit={{ y: "-120%" }}
+                staggerDuration={0.025}
+                splitLevelClassName="split-level"
+                transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                rotationInterval={3000}
+              />
+            <h1 className="h1">
+              Hello I'm <br />
+              <span>{MY_NAME}</span>
+            </h1>
+            <Button btnText={"Download Resume"} isNavBtn={false} />
           </div>
           <div className="column">
             <img src={profile} className="profile__image" alt="Profile" />

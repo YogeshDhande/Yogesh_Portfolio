@@ -85,17 +85,13 @@ footer .base__logo .full__name{
     footer .base__logo .full__name{
         font-size: 70px;
     }
+    footer .footer__wrapper{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 @media (max-width: 768px) {
     footer .nav{
         flex-direction: column;
-    }
-    footer .base__logo .full__name{
-        font-size: 50px;
-    }
-}
-@media (max-width: 450px) {
-    footer .base__logo .full__name{
-        font-size: 38px;
     }
 }
